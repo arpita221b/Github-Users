@@ -2,11 +2,11 @@ const Box = (props) => {
   return (
     <div className="box">
       <div className="img">
-        <img className="image" src={props.src} />
+        <img className="image" alt="github-user" src={props.src} />
       </div>
       <div className="details">
         <div>{props.username}</div>
-        <a href={props.repository} target="_blank">
+        <a href={props.repository} target="_blank" rel="noreferrer">
           Profile{" "}
         </a>
       </div>
