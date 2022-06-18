@@ -6,11 +6,15 @@ const GithubUsers = () => {
 
   useEffect(() => {
     getUsers();
-
     async function getUsers() {
-      const response = await fetch("https://api.github.com/users");
-      const data = await response.json();
-      setUserData(data);
+      try {
+        const response = await fetch("https://api.github.com/users");
+
+        const data = await response.json();
+        setUserData(data);
+      } catch (error) {
+        console.log(error);
+      }
     }
   }, []);
 
