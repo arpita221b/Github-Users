@@ -49,6 +49,12 @@
   color: white;
   text-decoration: none;
 }
+.loading {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media only screen and (max-width: 420px) {
   .box {
     width: 80%;
